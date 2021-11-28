@@ -7,4 +7,31 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Page Remove="Themes\BlueBrushsExtended.xaml" />
+    <Page Remove="Themes\DarkBrushsExtended.xaml" />
+    <Page Remove="Themes\Generic.xaml" />
+    <Page Remove="Themes\LightBrushsExtended.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Themes\BlueBrushsExtended.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dirkster.AvalonDock" Version="4.60.0" />
+    <PackageReference Include="Dirkster.AvalonDock.Themes.VS2013" Version="4.60.0" />
+    <PackageReference Include="Dirkster.MLib" Version="1.3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DynStudio.Imports\DynStudio.Imports.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Themes\DarkBrushsExtended.xaml" />
+    <Resource Include="Themes\Generic.xaml" />
+    <Resource Include="Themes\LightBrushsExtended.xaml" />
+  </ItemGroup>
+
 </Project>
